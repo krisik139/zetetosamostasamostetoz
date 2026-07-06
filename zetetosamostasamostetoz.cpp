@@ -5,29 +5,29 @@
 using namespace std;
 
 int main() {
-    setlocale(LC_ALL, "Ukrainian");
+    system("chcp 1251>null");
     srand(time(0));
 
     const int SIZE = 10;
     int array[SIZE];
 
-    cout << "Çàïîâíåííÿ ìàñèâó..." << endl;
+    cout << "Ð—Ð°Ð¿Ð¾Ð²Ð½ÐµÐ½Ð½Ñ Ð¼Ð°ÑÐ¸Ð²Ñƒ..." << endl;
     fill(array, SIZE);
 
-    cout << "Âèâåäåííÿ ìàñèâó: ";
+    cout << "Ð’Ð¸Ð²ÐµÐ´ÐµÐ½Ð½Ñ Ð¼Ð°ÑÐ¸Ð²Ñƒ: ";
     show(array, SIZE);
 
-    cout << "Ì³í³ìàëüíèé åëåìåíò: " << findMin(array, SIZE) << endl;
-    cout << "Ìàêñèìàëüíèé åëåìåíò: " << findMax(array, SIZE) << endl;
+    cout << "ÐœÑ–Ð½Ñ–Ð¼Ð°Ð»ÑŒÐ½Ð¸Ð¹ ÐµÐ»ÐµÐ¼ÐµÐ½Ñ‚: " << findMin(array, SIZE) << endl;
+    cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¸Ð¹ ÐµÐ»ÐµÐ¼ÐµÐ½Ñ‚: " << findMax(array, SIZE) << endl;
 
-    cout << "Ðåäàãóºìî åëåìåíò ï³ä ³íäåêñîì 0 (çíà÷åííÿ 999)..." << endl;
+    cout << "Ð ÐµÐ´Ð°Ð³ÑƒÑ”Ð¼Ð¾ ÐµÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¿Ñ–Ð´ Ñ–Ð½Ð´ÐµÐºÑÐ¾Ð¼ 0 (Ð·Ð½Ð°Ñ‡ÐµÐ½Ð½Ñ 999)..." << endl;
     edit(array, 0, 999);
-    cout << "Ìàñèâ ï³ñëÿ ðåäàãóâàííÿ: ";
+    cout << "ÐœÐ°ÑÐ¸Ð² Ð¿Ñ–ÑÐ»Ñ Ñ€ÐµÐ´Ð°Ð³ÑƒÐ²Ð°Ð½Ð½Ñ: ";
     show(array, SIZE);
 
-    cout << "Ñîðòóâàííÿ ìàñèâó.." << endl;
+    cout << "Ð¡Ð¾Ñ€Ñ‚ÑƒÐ²Ð°Ð½Ð½Ñ Ð¼Ð°ÑÐ¸Ð²Ñƒ..." << endl;
     sortArr(array, SIZE);
-    cout << "Â³äñîðòîâàíèé ìàñèâ: ";
+    cout << "Ð’Ñ–Ð´ÑÐ¾Ñ€Ñ‚Ð¾Ð²Ð°Ð½Ð¸Ð¹ Ð¼Ð°ÑÐ¸Ð²: ";
     show(array, SIZE);
 
     return 0;

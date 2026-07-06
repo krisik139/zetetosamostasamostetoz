@@ -25,7 +25,7 @@ int main() {
     cout << "Масив після редагування: ";
     show(array, SIZE);
 
-    cout << "Сортування масиву..." << endl;
+    cout << "Сортування масиву.." << endl;
     sortArr(array, SIZE);
     cout << "Відсортований масив: ";
     show(array, SIZE);
